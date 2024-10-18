@@ -1,0 +1,79 @@
+header {
+  position: sticky;
+  top: 0;
+  padding: 0.5rem;
+  background-color: yellow;
+  z-index: 1;
+}
+header .logo {
+  padding-bottom: 0.5rem;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav ul li {
+  padding-right: 1rem;
+}
+
+main {
+  margin: 0.5rem;
+}
+main h1 {
+  padding: 1rem 0;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+main section h2 {
+  background-color: cyan;
+  position: sticky;
+  top: 59px;
+}
+main section img {
+  width: 33.33%;
+}
+main section .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .fruit-hover figure {
+  position: relative;
+}
+main .fruit-hover figure figcaption {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: red;
+  color: white;
+}
+main .fruit-hover figure img:hover + figcaption {
+  display: block;
+}
+
+footer {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  header nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .gallery {
+    flex-direction: column;
+  }
+  main section img {
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+main {
+    margin: 0.5rem;
+
+    h1 {
+        padding: 1rem 0;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+
+        h2 {
+            background-color: cyan;
+            position: sticky;
+            top: 59px;
+        }
+
+        img {
+            width: 33.33%;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .fruit-hover {
+        figure {
+            position: relative;
+            figcaption {
+                display: none;
+                position: absolute;
+                top: 0;
+                background-color: red;
+                color: white;
+            }
+            & img:hover + figcaption{
+                display: block;
+            }
+        }
+    }
+}

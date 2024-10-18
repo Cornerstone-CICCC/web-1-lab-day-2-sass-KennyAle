@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+    header nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    main section img {
+        width: 100%;
+    }
+}
